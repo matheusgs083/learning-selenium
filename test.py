@@ -1,9 +1,14 @@
 from selenium import webdriver
+from time import sleep
 
-browser = webdriver.Chrome()
 
-browser.get("https://app.quickgestao.com.br/pix/transacoes")
+SITE_URL = "https://www.saucedemo.com/v1/"
 
-browser.find_element(By.ID, )
+driver = webdriver.Edge()
 
-browser.close()
+driver.get(SITE_URL)
+
+sleep(5.0)
+
+# full xpath /html/body/div[2]/div[1]/div/div/form/input[3]
+# partial xpath //*[@id="login-button"]
